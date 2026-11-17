@@ -190,12 +190,12 @@ const SITE_DATA = {
   // -------------------------------------------------------------------------
   conclusion: {
     experienceAndFeelings:
-      "Quá trình học môn Nhập môn Công nghệ số và AI cùng việc tự tay hoàn thiện trang Portfolio này là một trải nghiệm rất mới mẻ đối với một sinh viên Sư phạm Âm nhạc như mình. Ban đầu mình khá bỡ ngỡ vì trước giờ chủ yếu quen với việc tập đàn, xướng âm và soạn bài trên giấy. Tuy nhiên, khi từng bước làm quen với cách quản lý dữ liệu, khai thác công cụ số và tự tổ chức các sản phẩm học tập lên một trang web cá nhân hoàn chỉnh, mình cảm thấy việc học trở nên chủ động, hệ thống và thú vị hơn rất nhiều.",
+      "Quá trình thực hiện 6 bài tập trong học phần Nhập môn Công nghệ số và AI là một trải nghiệm rất mới mẻ đối với một sinh viên Sư phạm Âm nhạc như mình. Từ chỗ trước đây chủ yếu quen với việc tập đàn, xướng âm và ghi chép trên giấy, mình đã từng bước làm quen với cách quản lý dữ liệu khoa học, tra cứu tài liệu chuyên ngành, cộng tác trực tuyến và ứng dụng AI vào soạn bài. Việc tự tay hệ thống lại toàn bộ sản phẩm lên Portfolio giúp mình thấy việc học trở nên chủ động, bài bản và thực tế hơn rất nhiều.",
 
     keyKnowledgeAndSkills:
-      "Qua học phần này, mình đã nắm vững cách tổ chức và lưu trữ tệp tin khoa học trên đám mây, kỹ năng tìm kiếm và đánh giá độ tin cậy của tài liệu âm nhạc học thuật. Quan trọng hơn cả là tư duy đặt câu lệnh (Prompt) hiệu quả và sử dụng AI có trách nhiệm — biết kiểm chứng thông tin, giữ liêm chính học thuật và tận dụng công cụ số để thiết kế slide bài giảng, phiếu học tập âm nhạc trực quan hơn.",
+      "Qua 6 bài thực hành, mình đã nắm vững kỹ năng tổ chức thư mục tệp tin, tìm kiếm và thẩm định độ tin cậy của học liệu thanh nhạc, cũng như làm việc nhóm hiệu quả qua Google Meet và Google Docs. Quan trọng nhất là tư duy đặt câu lệnh (Prompt) đúng trọng tâm để khai thác AI tạo sinh làm học liệu trực quan, đồng thời luôn giữ vững nguyên tắc kiểm chứng thông tin và liêm chính học thuật trong học tập lẫn giảng dạy âm nhạc.",
 
     highlightAndChallenges:
-      "Điểm mình tâm đắc nhất ở Portfolio này là giao diện trẻ trung, mang đậm màu sắc âm nhạc (tích hợp cả phím đàn Kalimba tương tác) và lưu trữ gọn gàng toàn bộ 6 bài thực hành để sau này có thể mở lại làm tư liệu giảng dạy. Thách thức lớn nhất mình gặp phải là việc cấu trúc lại bố cục code HTML/CSS và xử lý lỗi hiển thị sao cho trang web chạy mượt mà trên cả điện thoại lẫn máy tính; nhờ kiên nhẫn rà soát từng phần và thử nghiệm nhiều lần, mình đã hoàn thiện được sản phẩm đúng như mong muốn."
+      "Điểm mình tâm đắc nhất ở Portfolio này là giao diện mang đậm sắc màu âm nhạc (tích hợp cả phím đàn Kalimba tương tác) và lưu trữ gọn gàng toàn bộ 6 bài thực hành để sau này dùng làm tư liệu giảng dạy. Thách thức lớn nhất mình gặp phải trong quá trình làm 6 bài là việc tinh chỉnh câu lệnh để AI hiểu đúng thuật ngữ nhạc lý tiếng Việt, kiểm soát hình ảnh kiến trúc cổ khi tạo video, cũng như rà soát đối chiếu các nguồn tài liệu thanh nhạc sao cho chuẩn xác; nhờ kiên nhẫn thử nghiệm và đối chiếu với chương trình chuẩn, mình đã hoàn thiện trọn vẹn các sản phẩm đúng mục tiêu đề ra."
   }
 };
