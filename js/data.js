@@ -88,25 +88,39 @@ const SITE_DATA = {
     },
     {
       code: "Bài 03",
-      status: "Đang cập nhật",
-      title: "Viết Prompt hiệu quả cho các tác vụ học tập",
-      shortDesc: "Xây dựng cấu trúc Prompt hiệu quả hỗ trợ phân tích tác phẩm và soạn ý tưởng.",
-      goal: "[Điền mục tiêu Bài 03 của bạn tại đây...]",
-      process: "[Điền các bước bạn đã thực hiện cho Bài 03...]",
-      errorsAndFix: "[Ghi lại lỗi hoặc khó khăn gặp phải và cách bạn xử lý...]",
-      result: "[Mô tả sản phẩm đạt được của Bài 03...]",
-      productLink: ""
+      status: "Đang cập nhập",
+      title: "Giao tiếp & Đặt câu lệnh (Prompt) với AI",
+      shortDesc: "Thiết kế 3 cấp độ Prompt (Cơ bản – Cải tiến – Nâng cao) cho 3 tác vụ học tập, thử nghiệm trên ChatGPT và đúc kết nguyên tắc viết Prompt hiệu quả.",
+      goal: "Rèn luyện kỹ năng thiết kế câu lệnh (Prompt Engineering) theo các cấp độ từ cơ bản đến nâng cao cho 3 tác vụ học tập phổ biến; biết so sánh chất lượng phản hồi của AI và rút ra nguyên tắc tối ưu hóa câu lệnh phục vụ học tập và giảng dạy Sư phạm Âm nhạc.",
+      process:
+        "1. Chọn 3 tác vụ học tập gắn với chuyên ngành Sư phạm Âm nhạc: (1) Tóm tắt tài liệu lịch sử âm nhạc, (2) Giải thích khái niệm hòa thanh phức tạp, (3) Tạo bộ câu hỏi ôn tập môn Lý thuyết âm nhạc.\n" +
+        "2. Viết 9 phiên bản câu lệnh chia làm 3 cấp độ cho mỗi tác vụ: Prompt cơ bản (ngắn gọn), Prompt cải tiến (chi tiết, có định dạng đầu ra) và Prompt nâng cao (áp dụng Role Prompting, Chain-of-Thought, Few-shot Examples).\n" +
+        "3. Thử nghiệm trực tiếp toàn bộ 9 câu lệnh trên ChatGPT, chụp ảnh minh họa và lập bảng so sánh chất lượng kết quả.\n" +
+        "4. Phân tích nguyên nhân chênh lệch chất lượng phản hồi và tổng hợp bộ nguyên tắc viết Prompt hiệu quả.",
+      errorsAndFix:
+        "• Khi dùng Prompt cơ bản, AI trả lời quá chung chung, dài dòng hoặc dùng thuật ngữ nhạc lý dịch chưa chuẩn tiếng Việt; đã khắc phục bằng cách gán vai trò (Giảng viên Âm nhạc), giới hạn phạm vi đối tượng và cung cấp ví dụ mẫu (Few-shot).\n" +
+        "• Một số câu hỏi trắc nghiệm do AI tạo ban đầu bị trùng ý hoặc đáp án nhiễu quá dễ đoán; đã bổ sung yêu cầu phân mức độ nhận thức (Biết – Hiểu – Vận dụng) và giải thích chi tiết từng đáp án.",
+      result:
+        "Hoàn thành báo cáo thực hành Bài 03 gồm hệ thống 9 câu lệnh mẫu ở 3 cấp độ, bảng so sánh kết quả thử nghiệm thực tế trên ChatGPT, phần phân tích chuyên sâu và 6 nguyên tắc vàng khi giao tiếp với AI.",
+      productLink: "" 
     },
     {
       code: "Bài 04",
-      status: "Đang cập nhật",
-      title: "Sử dụng công cụ hợp tác trực tuyến cho dự án nhóm",
-      shortDesc: "Nhận diện giới hạn của AI, kiểm chứng thông tin và trích dẫn nguồn đúng chuẩn.",
-      goal: "[Điền mục tiêu Bài 04 của bạn tại đây...]",
-      process: "[Điền các bước bạn đã thực hiện cho Bài 04...]",
-      errorsAndFix: "[Ghi lại lỗi hoặc khó khăn gặp phải và cách bạn xử lý...]",
-      result: "[Mô tả sản phẩm đạt được của Bài 04...]",
-      productLink: ""
+      status: "Đang cập nhập",
+      title: "Làm việc nhóm trực tuyến & Lập kế hoạch tổ chức hoạt động Âm nhạc",
+      shortDesc: "Tổ chức họp nhóm qua Google Meet, phân công vai trò và hoàn thiện kế hoạch tiết học Thường thức âm nhạc / Hát tập thể bậc THCS.",
+      goal: "Rèn luyện kỹ năng cộng tác trực tuyến: biết lập kế hoạch điều hành cuộc họp qua Google Meet, phân chia vai trò điều phối – thư ký – chuyên môn hợp lý và tổng hợp biên bản thống nhất sản phẩm của nhóm.",
+      process:
+        "1. Lập kế hoạch tổ chức cuộc họp trực tuyến (25–30 phút trên Google Meet) với chủ đề: Xây dựng kế hoạch tổ chức tiết học hát bài “Niềm vui của em” (Nhạc và lời: Nguyễn Huy Hùng) cho học sinh lớp 6.\n" +
+        "2. Phân công 5 vai trò cụ thể cho từng thành viên trong nhóm: Người điều phối, Phụ trách nội dung chuyên môn, Phụ trách tiến trình dạy học, Thư ký ghi biên bản và Phụ trách học liệu – slide.\n" +
+        "3. Tiến hành họp theo khung thời gian 7 bước: thống nhất tiêu chí chọn bài hát, mục tiêu tiết dạy (Kiến thức – Kỹ năng – Phẩm chất) và kịch bản tổ chức hoạt động 45 phút.\n" +
+        "4. Thư ký tổng hợp nội dung thảo luận, lập bảng phân công nhiệm vụ sau cuộc họp, nhận xét ưu – nhược điểm của từng thành viên và xuất tệp báo cáo.",
+      errorsAndFix:
+        "• Thời gian họp trực tuyến chỉ kéo dài 30 phút nên phần thảo luận cách xử lý tình huống học sinh hát lệch nhịp hoặc ngại biểu diễn trước lớp chưa thật sâu; nhóm đã thống nhất phân công nhiệm vụ bổ sung chi tiết vào bảng kế hoạch sau cuộc họp.\n" +
+        "• Chuẩn bị sẵn phương án nhạc beat dự phòng và thanh phách/trống nhỏ để tránh lúng túng nếu thiết bị âm thanh gặp trục trặc.",
+      result:
+        "Hoàn thiện bộ Kế hoạch tổ chức cuộc họp trực tuyến & Biên bản làm việc nhóm đầy đủ (gồm lịch trình điều hành, giáo án tóm tắt 45 phút, bảng phân công sản phẩm và đánh giá thành viên).",
+      productLink: "" // Dán link Google Docs / PDF file báo cáo Bài 04 của bạn vào đây
     },
     {
       code: "Bài 05",
@@ -121,16 +135,16 @@ const SITE_DATA = {
       videoLink: "https://www.youtube.com/watch?v=DzyYBuSJ55o"
     },
     {
-      code: "Bài 06",
-      status: "Đang cập nhập",
-      title: "Sử dụng AI có trách nhiệm trong học tập và nghiên cứu",
-      shortDesc: "Hệ thống hóa toàn bộ quá trình học tập lên trang web cá nhân hoàn chỉnh.",
-      goal: "[Điền mục tiêu Bài 06 của bạn tại đây...]",
-      process: "[Điền các bước bạn đã thực hiện cho Bài 06...]",
-      errorsAndFix: "[Ghi lại lỗi hoặc khó khăn gặp phải và cách bạn xử lý...]",
-      result: "[Mô tả sản phẩm đạt được của Bài 06...]",
-      productLink: ""
-    }
+  code: "Bài 06",
+  status: "Hoàn thành",
+  title: "Sử dụng AI có trách nhiệm trong học tập và nghiên cứu",
+  shortDesc: "Tìm hiểu quy định liêm chính học thuật, thực hành dùng AI có kiểm chứng khi soạn nội dung dạy học Âm nhạc THCS và xây dựng bộ 7 nguyên tắc cá nhân.",
+  goal: "Nắm vững các quy định về liêm chính học thuật khi dùng AI của Bộ GD&ĐT và ĐHQGHN; thực hành ứng dụng ChatGPT có kiểm chứng để chuẩn bị nội dung dạy học cảm thụ dân ca Việt Nam cho học sinh THCS; đúc kết bộ 7 nguyên tắc đạo đức cá nhân và thiết kế Infographic trực quan.",
+  process: "Bước 1: Tổng hợp và phân tích Thông tư 49/2026/TT-BGDĐT cùng hướng dẫn của ĐHQGHN và VNU-LIC. Bước 2: Dùng ChatGPT qua 3 lượt prompt để lập dàn ý, tìm từ khóa và gợi ý cách diễn đạt cho bài thuyết trình cảm thụ dân ca Quan họ lớp 7. Bước 3: Đối chiếu kết quả AI với Chương trình GDPT môn Âm nhạc 2018, tự viết lại nội dung và trích dẫn chuẩn Harvard. Bước 4: Phân tích 3 vấn đề đạo đức đặc thù ngành Sư phạm Âm nhạc, xây dựng bộ 7 nguyên tắc cá nhân và thiết kế Infographic minh họa.",
+  errorsAndFix: "Khó khăn gặp phải là các quy định hiện hành mới nêu nguyên tắc chung, chưa hướng dẫn chi tiết cho sản phẩm thực hành âm nhạc (phối khí, nhạc đệm), đồng thời câu trả lời ban đầu của AI còn chung chung và chưa bám sát thuật ngữ chương trình mới. Cách xử lý: Chủ động xác định ranh giới tự thực hiện phần chuyên môn cốt lõi, đối chiếu trực tiếp dàn ý với văn bản Chương trình GDPT môn Âm nhạc 2018 để bổ sung đúng tên năng lực đặc thù và lấy ví dụ thực tế từ bài 'Bèo dạt mây trôi'.",
+  result: "Hoàn thiện báo cáo thực hành chi tiết 5 trang (kèm danh mục tài liệu tham khảo chuẩn Harvard) và 01 Infographic tóm tắt quy trình 5 bước cùng bộ 7 nguyên tắc sử dụng AI có trách nhiệm dành cho sinh viên Sư phạm Âm nhạc.",
+  productLink: "files/bai6.pdf"
+}
   ],
 
   // -------------------------------------------------------------------------
