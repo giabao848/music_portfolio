@@ -168,6 +168,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("modalSubtitle").textContent = task.shortDesc;
     document.getElementById("modalGoal").textContent = task.goal;
     document.getElementById("modalProcess").textContent = task.process;
+    document.getElementById("modalTools").textContent = task.toolsUsed
     document.getElementById("modalErrors").textContent = task.errorsAndFix;
     document.getElementById("modalResult").textContent = task.result;
 
