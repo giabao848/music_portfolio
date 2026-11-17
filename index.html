@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Giới thiệu — Portfolio Nhập môn Công nghệ số & AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <span class="bg-sticker st-1">🎵</span>
+  <span class="bg-sticker st-2">🎹</span>
+  <span class="bg-sticker st-3">✨</span>
+  <span class="bg-sticker st-4">🎧</span>
+
+  <header>
+    <nav class="nav-bar">
+      <a href="index.html" class="brand">
+        <span class="brand-dot">♪</span>
+        <span id="navBrandName">Music Portfolio</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Giới thiệu</a></li>
+        <li><a href="du-an.html">Dự án (6 Bài tập)</a></li>
+        <li><a href="tong-ket.html">Tổng kết</a></li>
+      </ul>
+      <button class="music-pill" id="bgmToggle" type="button">
+        <span id="bgmIcon">▶</span> <span id="bgmText">Giai điệu nền</span>
+      </button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <div class="hero">
+      <div class="hero-card">
+        <div class="badge-chip" id="heroGreeting">♪ xin chào, mình là</div>
+        <h1 id="heroName">[Họ và tên của bạn]</h1>
+        <p class="hero-sub">
+          Sinh viên <span id="heroYear">Năm 2</span> ngành <span id="heroMajor">Sư phạm Âm nhạc</span>
+        </p>
+        <div class="hero-actions">
+          <a href="du-an.html" class="btn btn-primary">Xem dự án (6 bài tập) →</a>
+          <a href="tong-ket.html" class="btn btn-secondary">Tổng kết môn học</a>
+        </div>
+
+        <div class="kalimba-box">
+          <div class="kalimba-label">
+            <span>🎹 Thử bấm 5 phím đàn Kalimba ngũ cung</span>
+            <span>Đô · Rê · Mi · Sol · La</span>
+          </div>
+          <div class="kalimba-keys">
+            <button class="k-key" data-freq="523.25">C5 · Đô</button>
+            <button class="k-key" data-freq="587.33">D5 · Rê</button>
+            <button class="k-key" data-freq="659.25">E5 · Mi</button>
+            <button class="k-key" data-freq="783.99">G5 · Sol</button>
+            <button class="k-key" data-freq="880.00">A5 · La</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="photo-card">
+        <div class="photo-frame" id="heroPhotoFrame">
+          <div class="photo-placeholder">
+            🎵<br><br>ảnh của bạn
+          </div>
+        </div>
+        <div class="photo-tag" id="photoCaption">♪ [Họ và tên] ♪</div>
+      </div>
+    </div>
+
+    <!-- MARQUEE -->
+    <div class="marquee-wrap" aria-hidden="true">
+      <div class="marquee-track">
+        <span>♪ chào mừng bạn đến với portfolio</span>
+        <span>✦</span>
+        <span>🎹 nhập môn công nghệ số và ai</span>
+        <span>✦</span>
+        <span>🎧 sư phạm âm nhạc</span>
+        <span>✦</span>
+        <span>✨ lưu trữ 6 bài tập thực hành</span>
+        <span>✦</span>
+        <span>♪ chào mừng bạn đến với portfolio</span>
+        <span>✦</span>
+        <span>🎹 nhập môn công nghệ số và ai</span>
+        <span>✦</span>
+        <span>🎧 sư phạm âm nhạc</span>
+        <span>✦</span>
+        <span>✨ lưu trữ 6 bài tập thực hành</span>
+      </div>
+    </div>
+
+    <!-- 1. THÔNG TIN CÁ NHÂN NGẮN GỌN -->
+    <section id="gioi-thieu">
+      <div class="section-head">
+        <h2 class="section-title"><span class="section-icon">🪪</span> Giới thiệu bản thân</h2>
+      </div>
+      <div class="about-grid">
+        <div class="glass-box">
+          <div class="about-photo" id="aboutPhotoFrame">
+            <div class="photo-placeholder">🎼<br>Ảnh của bạn</div>
+          </div>
+        </div>
+        <div class="glass-box">
+          <dl class="info-list" id="infoList"></dl>
+          <div class="bio-quote" id="bioQuote"></div>
+          <div class="hobby-tags" id="hobbyTags"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 & 3. MỤC TIÊU HỌC TẬP & MỤC TIÊU CỦA PORTFOLIO -->
+    <section id="muc-tieu">
+      <div class="section-head">
+        <h2 class="section-title"><span class="section-icon">🎯</span> Định hướng & Mục tiêu</h2>
+      </div>
+      <div class="goals-dual-grid">
+        <!-- Mục tiêu học tập và định hướng phát triển cá nhân -->
+        <article class="goal-card">
+          <div class="goal-header">
+            <div class="goal-emblem">🎼</div>
+            <h3 id="learningGoalTitle"></h3>
+          </div>
+          <p id="learningGoalSummary"></p>
+          <ul class="goal-bullets" id="learningGoalPoints"></ul>
+        </article>
+
+        <!-- Mục tiêu của Portfolio -->
+        <article class="goal-card portfolio-goal">
+          <div class="goal-header">
+            <div class="goal-emblem">🗂️</div>
+            <h3 id="portfolioGoalTitle"></h3>
+          </div>
+          <p id="portfolioGoalSummary"></p>
+          <ul class="goal-bullets" id="portfolioGoalPoints"></ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p id="footerText"></p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
