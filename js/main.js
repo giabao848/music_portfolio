@@ -271,4 +271,47 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+  // -------------------------------------------------------------------------
+  // HIỆU ỨNG RÊ CHUỘT / CHẠM TẠO NỐT NHẠC BAY & TƯƠNG TÁC NỀN
+  // -------------------------------------------------------------------------
+  const noteIcons = ["♪", "♫", "♬", "♩", "✨"];
+  const noteColors = ["#6366F1", "#0EA5E9", "#FB7185", "#10B981", "#8B5CF6"];
+  let lastNoteTime = 0;
+
+  function spawnFloatingNote(x, y) {
+    const now = Date.now();
+    if (now - lastNoteTime < 110) return; // Giới hạn mật độ để mượt máy
+    lastNoteTime = now;
+
+    const note = document.createElement("span");
+    note.className = "cursor-note";
+    note.textContent = noteIcons[Math.floor(Math.random() * noteIcons.length)];
+    note.style.left = `${x}px`;
+    note.style.top = `${y}px`;
+    note.style.color = noteColors[Math.floor(Math.random() * noteColors.length)];
+    document.body.appendChild(note);
+
+    setTimeout(() => note.remove(), 1100);
+  }
+
+  // Rê chuột trên máy tính -> thả nốt nhạc + đẩy nhẹ 4 sticker nền
+  const bgStickers = document.querySelectorAll(".bg-sticker");
+  document.addEventListener("mousemove", (e) => {
+    spawnFloatingNote(e.clientX, e.clientY);
+
+    const moveX = (e.clientX / window.innerWidth - 0.5) * 24;
+    const moveY = (e.clientY / window.innerHeight - 0.5) * 24;
+    bgStickers.forEach((st, index) => {
+      const factor = index % 2 === 0 ? 1 : -1;
+      st.style.marginLeft = `${moveX * factor}px`;
+      st.style.marginTop = `${moveY * factor}px`;
+    });
+  });
+
+  // Chạm tay trên điện thoại -> thả nốt nhạc tại điểm chạm
+  document.addEventListener("touchstart", (e) => {
+    if (e.touches.length > 0) {
+      spawnFloatingNote(e.touches[0].clientX, e.touches[0].clientY);
+    }
+  }, { passive: true });
 });
