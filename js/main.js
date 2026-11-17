@@ -37,11 +37,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const infoFields = [
       { label: "Họ và tên", value: profile.fullName },
+      {label: "MSV", value: profile.studentId},
       { label: "Ngành học", value: profile.major },
       { label: "Trường", value: profile.school },
       { label: "Lớp học phần", value: profile.className },
       { label: "Email", value: profile.email },
-      { label: "Học phần", value: "Nhập môn Công nghệ số & AI" }
+      
     ];
 
     document.getElementById("infoList").innerHTML = infoFields.map(item => `
