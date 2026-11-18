@@ -13,15 +13,15 @@ const SITE_DATA = {
   profile: {
     greeting: "♪ xin chào, mình là",
     fullName: "Lê Đức Huy",
-    studentId: "[Mã sinh viên của bạn]",
+    studentId: "2552210296",
     year: "Năm 2",
     major: "Sư phạm Âm nhạc",
     school: "Trường Đại Học Sư Phạm Nghệ Thuật Trung Ương",
-    className: "[Lớp / Khóa]",
-    email: "[emailcuaban@gmail.com]",
+    className: "K20F",
+    email: "leh799829@gmail.com",
     // Đặt ảnh vào thư mục images/ và điền tên file (ví dụ: "images/photo1.jpg")
-    avatarUrl: "",
-    secondPhotoUrl: "",
+    avatarUrl: "images/anh1.jpg",
+    secondPhotoUrl: "images/anh2.jpg",
     quote: "“Âm nhạc chạm đến cảm xúc, còn công nghệ số giúp bài giảng lan tỏa gần gũi hơn.”",
     hobbies: ["🎧 Nghe nhạc Indie"],
     courseName: "Nhập môn Công nghệ số và AI"
@@ -99,7 +99,7 @@ const SITE_DATA = {
     },
     {
       code: "Bài 03",
-      status: "Đang cập nhập",
+      status: "Hoàn thành",
       title: "Giao tiếp & Đặt câu lệnh (Prompt) với AI",
       shortDesc: "Thiết kế 3 cấp độ Prompt (Cơ bản – Cải tiến – Nâng cao) cho 3 tác vụ học tập, thử nghiệm trên ChatGPT và đúc kết nguyên tắc viết Prompt hiệu quả.",
       goal: "Rèn luyện kỹ năng thiết kế câu lệnh (Prompt Engineering) theo các cấp độ từ cơ bản đến nâng cao cho 3 tác vụ học tập phổ biến; biết so sánh chất lượng phản hồi của AI và rút ra nguyên tắc tối ưu hóa câu lệnh phục vụ học tập và giảng dạy Sư phạm Âm nhạc.",
@@ -109,18 +109,18 @@ const SITE_DATA = {
         "3. Thử nghiệm trực tiếp toàn bộ 9 câu lệnh trên ChatGPT, chụp ảnh minh họa và lập bảng so sánh chất lượng kết quả.\n" +
         "4. Phân tích nguyên nhân chênh lệch chất lượng phản hồi và tổng hợp bộ nguyên tắc viết Prompt hiệu quả.",
       toolsUsed:
-        "• Công cụ AI & Mục đích sử dụng: ChatGPT (GPT-4o / GPT-4o mini) — dùng làm đối tượng thử nghiệm trực tiếp 9 câu lệnh ở 3 cấp độ (Cơ bản – Cải tiến – Nâng cao) để kiểm chứng sự thay đổi chất lượng câu trả lời trong tóm tắt lịch sử âm nhạc, giải thích hòa thanh và tạo câu hỏi ôn tập.\n" +
+        "• Công cụ AI & Mục đích sử dụng: Gemini — dùng làm đối tượng thử nghiệm trực tiếp 9 câu lệnh ở 3 cấp độ (Cơ bản – Cải tiến – Nâng cao) để kiểm chứng sự thay đổi chất lượng câu trả lời trong tóm tắt lịch sử âm nhạc, giải thích hòa thanh và tạo câu hỏi ôn tập.\n" +
         "• Công cụ hỗ trợ: Microsoft Word (lập bảng so sánh kết quả và biên tập báo cáo).",
       errorsAndFix:
         "• Khi dùng Prompt cơ bản, AI trả lời quá chung chung, dài dòng hoặc dùng thuật ngữ nhạc lý dịch chưa chuẩn tiếng Việt; đã khắc phục bằng cách gán vai trò (Giảng viên Âm nhạc), giới hạn phạm vi đối tượng và cung cấp ví dụ mẫu (Few-shot).\n" +
         "• Một số câu hỏi trắc nghiệm do AI tạo ban đầu bị trùng ý hoặc đáp án nhiễu quá dễ đoán; đã bổ sung yêu cầu phân mức độ nhận thức (Biết – Hiểu – Vận dụng) và giải thích chi tiết từng đáp án.",
       result:
         "Hoàn thành báo cáo thực hành Bài 03 gồm hệ thống 9 câu lệnh mẫu ở 3 cấp độ, bảng so sánh kết quả thử nghiệm thực tế trên ChatGPT, phần phân tích chuyên sâu và 6 nguyên tắc vàng khi giao tiếp với AI.",
-      productLink: ""
+      productLink: "files/bai3.pdf"
     },
     {
       code: "Bài 04",
-      status: "Đang cập nhập",
+      status: "Hoàn thành",
       title: "Làm việc nhóm trực tuyến & Lập kế hoạch tổ chức hoạt động Âm nhạc",
       shortDesc: "Tổ chức họp nhóm qua Google Meet, phân công vai trò và hoàn thiện kế hoạch tiết học Thường thức âm nhạc / Hát tập thể bậc THCS.",
       goal: "Rèn luyện kỹ năng cộng tác trực tuyến: biết lập kế hoạch điều hành cuộc họp qua Google Meet, phân chia vai trò điều phối – thư ký – chuyên môn hợp lý và tổng hợp biên bản thống nhất sản phẩm của nhóm.",
@@ -137,7 +137,7 @@ const SITE_DATA = {
         "• Chuẩn bị sẵn phương án nhạc beat dự phòng và thanh phách/trống nhỏ để tránh lúng túng nếu thiết bị âm thanh gặp trục trặc.",
       result:
         "Hoàn thiện bộ Kế hoạch tổ chức cuộc họp trực tuyến & Biên bản làm việc nhóm đầy đủ (gồm lịch trình điều hành, giáo án tóm tắt 45 phút, bảng phân công sản phẩm và đánh giá thành viên).",
-      productLink: ""
+      productLink: "files/bai4.pdf"
     },
     {
       code: "Bài 05",

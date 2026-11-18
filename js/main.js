@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
       {label: "MSV", value: profile.studentId},
       { label: "Ngành học", value: profile.major },
       { label: "Trường", value: profile.school },
-      { label: "Lớp học phần", value: profile.className },
+      { label: "Lớp/Khóa", value: profile.className },
       { label: "Email", value: profile.email },
       
     ];
@@ -314,4 +314,35 @@ document.addEventListener("DOMContentLoaded", () => {
       spawnFloatingNote(e.touches[0].clientX, e.touches[0].clientY);
     }
   }, { passive: true });
+  // -------------------------------------------------------------------------
+  // HIỆU ỨNG ENTRANCE KHI CUỘN TRANG (SCROLL REVEAL STAGGERED)
+  // -------------------------------------------------------------------------
+  const revealTargets = document.querySelectorAll(
+    ".section-head, .glass-box, .goal-card, .task-card, .summary-card, .sum-item, .completed-link-card"
+  );
+
+  revealTargets.forEach((el, index) => {
+    el.classList.add("reveal-item");
+    // Tạo độ trễ nối tiếp nhẹ (tối đa 0.35s) cho các thẻ đứng cạnh nhau
+    const delay = (index % 4) * 0.08;
+    el.style.transitionDelay = `${delay}s`;
+  });
+
+  const revealObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          // Xóa transitionDelay sau khi hiện xong để hiệu ứng hover phản hồi tức thì
+          setTimeout(() => {
+            entry.target.style.transitionDelay = "0s";
+          }, 800);
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.12 }
+  );
+
+  revealTargets.forEach((el) => revealObserver.observe(el));
 });

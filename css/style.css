@@ -909,7 +909,137 @@ footer {
   font-size: 0.9rem;
   font-weight: 600;
 }
+/* =========================================================================
+   HIỆU ỨNG HOVER & ENTRANCE (XUẤT HIỆN MƯỢT MÀ KHI TẢI / CUỘN TRANG)
+   ========================================================================= */
 
+/* 1. Hiệu ứng Entrance khi mới mở trang (Hero & Header) */
+header {
+  animation: slideDownNav 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.hero-card,
+.page-hero .hero-card {
+  animation: entrancePopUp 0.75s cubic-bezier(0.22, 1, 0.36, 1) 0.08s both;
+}
+
+.photo-card {
+  animation: entrancePhoto 0.85s cubic-bezier(0.22, 1, 0.36, 1) 0.18s both;
+}
+
+.marquee-wrap {
+  animation: entrancePopUp 0.75s cubic-bezier(0.22, 1, 0.36, 1) 0.25s both;
+}
+
+@keyframes slideDownNav {
+  from {
+    opacity: 0;
+    transform: translateY(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes entrancePopUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes entrancePhoto {
+  from {
+    opacity: 0;
+    transform: translateY(32px) rotate(4deg) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) rotate(1.5deg) scale(1);
+  }
+}
+
+/* 2. Hiệu ứng Scroll Entrance cho các khối bên dưới */
+.reveal-item {
+  opacity: 0;
+  transform: translateY(26px) scale(0.985);
+  transition:
+    opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.reveal-item.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* 3. Nâng cấp hiệu ứng Hover mượt & nảy nhẹ cho các thẻ nội dung */
+.glass-box,
+.goal-card,
+.sum-item,
+.summary-card {
+  transition:
+    transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.glass-box:hover,
+.goal-card:hover,
+.sum-item:hover {
+  transform: translateY(-5px);
+  border-color: rgba(129, 140, 248, 0.55);
+  box-shadow: 0 20px 42px -12px rgba(99, 102, 241, 0.2);
+}
+
+.info-item,
+.goal-bullets li,
+.hobby-chip {
+  transition:
+    transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1),
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.info-item:hover {
+  transform: translateY(-3px);
+  border-color: var(--lavender);
+  box-shadow: 0 8px 18px rgba(99, 102, 241, 0.12);
+}
+
+.goal-bullets li:hover {
+  transform: translateX(5px);
+  background: #fff;
+  border-color: var(--lavender);
+}
+
+.hobby-chip:hover {
+  transform: translateY(-3px) scale(1.04);
+  background: var(--lavender-soft);
+  border-color: var(--lavender);
+}
+
+.brand-dot {
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.brand:hover .brand-dot {
+  transform: rotate(20deg) scale(1.12);
+}
+
+.k-key:hover {
+  transform: translateY(-2px);
+  background: var(--lavender-soft);
+  color: #4F46E5;
+}
 @media (max-width: 860px) {
   .hero, .about-grid, .goals-dual-grid {
     grid-template-columns: 1fr;
@@ -948,4 +1078,16 @@ footer {
   .hero-card, .glass-box, .goal-card, .task-card, .summary-card {
     background: rgba(255, 255, 255, 0.82);
   }
+}
+/* Căn lại trọng tâm ảnh đại diện ở khung Hero */
+#heroPhotoFrame {
+  overflow: hidden; /* Giữ phần ảnh phóng to không bị tràn ra ngoài khung trắng */
+}
+
+#heroPhotoFrame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.35) translateY(-12%); /* Phóng to 1.35 lần và kéo ảnh lên trên */
+  transform-origin: center center;
 }
