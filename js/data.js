@@ -22,9 +22,9 @@ const SITE_DATA = {
     // Đặt ảnh vào thư mục images/ và điền tên file (ví dụ: "images/photo1.jpg")
     avatarUrl: "images/anh1.jpg",
     secondPhotoUrl: "images/anh2.jpg",
-    quote: "“Âm nhạc chạm đến cảm xúc, còn công nghệ số giúp bài giảng lan tỏa gần gũi hơn.”",
-    hobbies: ["🎧 Nghe nhạc Indie"],
-    courseName: "Nhập môn Công nghệ số và AI"
+    quote: "“Ước mơ trở thành thầy giáo âm nhạc và nhạc công đám cưới, lan tỏa niềm vui qua từng giai điệu.”",
+    hobbies: ["🎼 Chơi đàn", "🎤 Ca hát", "🎧 Nghe nhạc"],
+    courseName: "INF2501_7-Nhập môn Công nghệ số và AI"
   },
 
   // Ý 2 của Câu 1: Mục tiêu học tập và định hướng phát triển cá nhân
